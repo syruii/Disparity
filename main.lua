@@ -36,7 +36,8 @@ function love.update(dt)
 		player.y = player.y - 100 * dt
 	elseif love.keyboard.isDown("down") then
 		player.y = player.y + 100 * dt
-	elseif love.keyboard.isDown("left") then
+	end
+	if love.keyboard.isDown("left") then
 		player.x = player.x - 100 * dt
 	elseif love.keyboard.isDown("right") then
 		player.x = player.x + 100 * dt
